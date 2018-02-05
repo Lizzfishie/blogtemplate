@@ -1,10 +1,16 @@
-
-
 #topBanner {
   width: 100%;
   height: auto;
   background: url('../img/banner.jpeg') no-repeat;
   background-size: 100%;
+}
+
+#blogcarouselslider .carousel-caption {
+  background-color: rgba(0,0,0,0.6);
+}
+
+#blogcarouselslider .carousel-indicators {
+  padding-bottom: 10px;
 }
 
 .black-card-border {

@@ -1,3 +1,14 @@
+<!-- 
+  
+  TO DO: 
+  - Make List Group text responsive (like the text of the cards)
+  - Make Cards Links
+  - Make Slider Links
+  - Make Slider Navigation Link Pointer
+  - Make Categories Links
+  - Add Place For Add Underneath List Group
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,70 +73,221 @@
     </nav>
   </header>
 
-  <!-- BLOG POST CAROUSEL -->
-  <section id="blogCarousel">
+  <!-- MAIN CONTENT -->
+  <main role="main">
     
-  </section>
+    <!-- FRONTPAGE -->
+    <section id="frontpage" class="bg-dark">
+      <div class="container pt-4">
+        <div class="row">
+          <!-- LEFT SIDE -->
+          <div class="col-lg-8 col-md-9 col-xs-12">
+            <div class="row">
 
-  <!-- BLOG TOP THREE CATEGORIES -->
-  <section id="topCategories" class="p-5 bg-dark text-white text-center">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-4">
-          <div class="card black-card-border">
-            <img class="card-img" src="img/category1.jpeg" alt="Category 1">
-            <div class="card-img-overlay d-flex align-items-center">
-              <div>
-                <h3 class="card-title">Category 1</h3>
-                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, recusandae.</p>
+            <!-- BLOG CAROUSEL -->
+            <div id="blogcarouselslider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#blogcarouselslider" data-slide-to="0"></li>
+                  <li data-target="#blogcarouselslider" data-slide-to="1"></li>
+                  <li data-target="#blogcarouselslider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="img/carousel1.jpeg" alt="First Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Slide One</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="img/carousel2.jpeg" alt="Second Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Slide Two</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="img/carousel3.jpeg" alt="Third Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Slide Three</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
+
             </div>
-          </div>  
-        </div>
+            <div class="row pt-4 px-4 pl-md-0 pr-md-3">
 
-        <div class="col-md-4 py-md-0 py-3">
-          <div class="card black-card-border">
-              <img class="card-img" src="img/category2.jpeg" alt="Category 2">
-              <div class="card-img-overlay d-flex align-items-center">
-                <div>
-                  <h3 class="card-title">Category 2</h3>
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, voluptatibus!</p>
-                </div>                 
+               <!-- BLOGPOSTS -->
+              <div class="card-columns">
+
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="img/author1.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                      <h4 class="card-title">Lorem ipsum dolor sit amet consectetur</h4>
+                      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo exercitationem reprehenderit quasi beatae nemo soluta facere! Ipsa dolorem quidem repellendus.</p>
+                      <p class="card-text"><small class="text-muted"><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small></p>   
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Lorem ipsum dolor sit</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eum nisi optio! Pariatur sunt totam eligendi fuga consequatur, in voluptatibus veritatis omnis aliquam quis maxime recusandae odio dignissimos corrupti? Soluta.</p>
+                    <p class="card-text"><small class="text-muted"><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dignissimos!</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A explicabo fugit natus ullam dolore molestias, excepturi error cupiditate non. Earum aspernatur odio aliquid at dolor doloremque minus sed ipsa! Quod?</p>
+                    <p class="card-text"><small class="text-muted"><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small></p>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="img/topic1.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Lorem, ipsum dolor</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur ad ea dolorum non tempora omnis, velit iusto soluta magni enim. Debitis voluptas assumenda modi corporis?</p>
+                    <p class="card-text"><small class="text-muted"><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="img/topic2.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia consectetur incidunt dicta amet suscipit tenetur alias. Quos, nemo!</p>
+                    <p class="card-text"><small class="text-muted"><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Lorem ipsum dolor sit</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eum nisi optio! Pariatur sunt totam eligendi fuga consequatur, in voluptatibus veritatis omnis aliquam quis maxime recusandae odio dignissimos corrupti? Soluta.</p>
+                    <p class="card-text"><small class="text-muted"><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small></p>
+                  </div>
+                </div>
+                
               </div>
+
             </div>
           </div>
 
+          <!-- RIGHT SIDE -->
+          <div class="col-lg-4 col-md-3 col-xs-12 px-4 px-md-0">
+
+              <!-- SIDEBAR -->
+              <ul class="list-group">
+                <a class="list-group-item list-group-item-action list-group-item-dark" href="#"> 
+                  <h6 class="mb-1">List group item heading</h6>
+                  <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, aliquid!</p>
+                  <small><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small>
+
+                </a>
+                <a class="list-group-item list-group-item-action list-group-item-dark" href="#">
+                  <h6 class="mb-1">List group item heading</h6>
+                  <p class="mb-1">Lorem ipsum dolor sit.</p>
+                  <small><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small>
+                </a>
+                <a class="list-group-item list-group-item-action list-group-item-dark" href="#">
+                  <h6 class="mb-1">List group item heading</h6>
+                  <p class="mb-1">Lorem ipsum dolor sit amet consectetur.</p>
+                  <small><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small>
+                </a>
+                <a class="list-group-item list-group-item-action list-group-item-dark" href="#">
+                  <h6 class="mb-1">List group item heading</h6>
+                  <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur modi deleniti.</p>
+                  <small><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small>
+                </a>
+                <a class="list-group-item list-group-item-action list-group-item-dark" href="#">
+                  <h6 class="mb-1">List group item heading</h6>
+                  <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <small><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small>
+                </a>
+                <a class="list-group-item list-group-item-action list-group-item-dark" href="#">
+                  <h6 class="mb-1">List group item heading</h6>
+                  <p class="mb-1">Lorem, ipsum dolor.</p>
+                  <small><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small>
+                </a>
+                <a class="list-group-item list-group-item-action list-group-item-dark" href="#">
+                  <h6 class="mb-1">List group item heading</h6>
+                  <p class="mb-1">Lorem ipsum dolor sit amet.</p>
+                  <small><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small>
+                </a>
+                <a class="list-group-item list-group-item-action list-group-item-dark" href="#">
+                  <h5 class="mb-1">List group item heading</h5>
+                  <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, eos.</p>
+                  <small><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small>
+                </a>
+                <a class="list-group-item list-group-item-action list-group-item-dark" href="#">
+                  <h6 class="mb-1">List group item heading</h6>
+                  <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                  <small><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small>
+                </a>
+                <a class="list-group-item list-group-item-action list-group-item-dark" href="#">
+                  <h6 class="mb-1">List group item heading</h6>
+                  <p class="mb-1">Lorem ipsum dolor sit amet.</p>
+                  <small><span><i class="fa fa-clock-o"></i></span> Donec id elit non mi porta</small>
+                </a>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG TOP THREE CATEGORIES -->
+    <section id="topCategories" class="bg-dark text-white text-center">
+      <div class="container py-3 xy-md-5 px-4 px-md-0">
+        <div class="row">
+  
           <div class="col-md-4">
             <div class="card black-card-border">
-              <img class="card-img" src="img/category3.jpeg" alt="Category 3">
+              <img class="card-img" src="img/category1.jpeg" alt="Category 1">
               <div class="card-img-overlay d-flex align-items-center">
                 <div>
-                  <h3 class="card-title">Category 3</h3>
-                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, aperiam?</p>
+                  <h3 class="card-title">Category 1</h3>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, recusandae.</p>
+                </div>
+              </div>
+            </div>  
+          </div>
+  
+          <div class="col-md-4 py-md-0 py-3">
+            <div class="card black-card-border">
+                <img class="card-img" src="img/category2.jpeg" alt="Category 2">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <div>
+                    <h3 class="card-title">Category 2</h3>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, voluptatibus!</p>
+                  </div>                 
                 </div>
               </div>
             </div>
-          </div> 
-            
-
+  
+            <div class="col-md-4">
+              <div class="card black-card-border">
+                <img class="card-img" src="img/category3.jpeg" alt="Category 3">
+                <div class="card-img-overlay d-flex align-items-center">
+                  <div>
+                    <h3 class="card-title">Category 3</h3>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, aperiam?</p>
+                  </div>
+                </div>
+              </div>
+            </div> 
+              
+  
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- BLOG MAIN CONTENT-->
-  <main role="main" class="container">
-    <div class="row">
-      <!-- BLOG POSTS -->
-      <div class="col-md-8">
-
-      </div>
-      <!-- BLOG SIDEBAR -->
-      <aside class="col-md-4">
-
-      </aside>
-    </div>
+    </section>
+    
   </main>
 
   <!-- FOOTER -->
@@ -142,6 +304,13 @@
     </div>
     
   </footer>
+
+        
+
+          
+      
+
+  
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

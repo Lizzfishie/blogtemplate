@@ -1,3 +1,41 @@
+/* Colors */
+.bg-theme {
+  background-color: hsl(0, 50%, 45%);
+}
+
+.bg-theme-faded {
+  background-color: rgb(212, 106, 106);
+}
+
+a.card-blog{
+  color: #212529;
+  text-decoration: none;
+}
+
+a.card-blog:hover {
+  background-color: #212529;
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+  color: #f8f9fa;
+  background-color:#212529;
+}
+
+a.card-categories{
+  color: #fff;
+  text-decoration: none;
+}
+
+a.card-categories:hover {
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+
+
+/* Header */
 #topBanner {
   width: 100%;
   height: auto;
@@ -5,6 +43,7 @@
   background-size: 100%;
 }
 
+/* Carousel */
 #blogcarouselslider .carousel-caption {
   background-color: rgba(0,0,0,0.6);
 }
@@ -13,6 +52,17 @@
   padding-bottom: 10px;
 }
 
+#blogcarouselslider .carousel-caption:hover {
+  text-decoration: none;
+  color: rgba(212, 106, 106, 0.74);
+}
+
+#blogcarouselslider .carousel-indicators > li:hover {
+  cursor: pointer;
+}
+
+
+/* Blogposts */
 .black-card-border {
   background-color: #000;
   border: 2px solid rgba(0,0,0,0.6);
@@ -24,24 +74,47 @@
   outline-offset: -15px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .card-title {
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  /* Carousel */
+  .carousel-item > img {
+    border-radius: 0.25rem;
+  }
+ 
+  /* Card & List */
+  .card-title, .list-title {
     font-size: 0.95em;
   }
-
-  .card-text {
+  
+  .card-text, .list-text {
     font-size: 0.75em;
   }
+
 }
 
-@media screen and (max-width: 374px){
-  .card-title {
-    font-size: 0.95em;
+@media screen and (min-width: 768px) {
+  /* Carousel */
+  .carousel-item > img {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+ 
+  /* Sidebar */
+  .list-group-item:first-child {
+    border-top-left-radius: 0rem;
   }
 
-  .card-text {
-    font-size: 0.75em;
-  }
 }
 
+@media screen and (max-width: 767px) {
+  /* Categories */
+  .card-categories-body > .card-title {
+    font-size: 1.85rem;
+  }
+
+  .card-categories-body > .card-text {
+    font-size: 1.15rem;
+  }
+}
 

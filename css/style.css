@@ -1,10 +1,30 @@
+/* Font */
+
+body {
+  Font-Family: 'Merriweather', serif;
+}
+
+h1, h2, h3, h4, h5, h6, #navbarNav li {
+  Font-Family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+#topBanner h1, #navbarNav li, #blogcarouselslider h3, #topCategories h3 {
+  text-transform: uppercase;
+}
+
 /* Colors */
+.bg-dark {
+  background-color: #230007 !important;
+}
+
 .bg-theme {
-  background-color: hsl(0, 50%, 45%);
+  background-color: #A31621;
 }
 
 .bg-theme-faded {
-  background-color: rgb(212, 106, 106);
+  background-color: #69140E;
+  color: #DDD8C4;
 }
 
 a.card-blog{
@@ -13,14 +33,18 @@ a.card-blog{
 }
 
 a.card-blog:hover {
-  background-color: #212529;
-  color: #f8f9fa;
+  background-color: #A31621;
+  color: #DDD8C4;
   text-decoration: none;
 }
 
+a.card-blog:hover > .card-body > .card-text > .text-muted {
+  color: #EEF4D4 !important;
+}
+
 .list-group-item-action:focus, .list-group-item-action:hover {
-  color: #f8f9fa;
-  background-color:#212529;
+  color: #230007;
+  background-color:#DDD8C4;
 }
 
 a.card-categories{
@@ -28,9 +52,14 @@ a.card-categories{
   text-decoration: none;
 }
 
-a.card-categories:hover {
-  color: #d3d3d3;
+a.card-categories:hover{
+  color: #DDD8C4;
   text-decoration: none;
+}
+
+a.card-categories:hover > .card-img-overlay {
+  outline: 1px solid #DDD8C4;
+  outline-offset: -5px;
 }
 
 
@@ -54,7 +83,8 @@ a.card-categories:hover {
 
 #blogcarouselslider .carousel-caption:hover {
   text-decoration: none;
-  color: rgba(212, 106, 106, 0.74);
+  color: rgba(35, 0, 7, 0.8);
+  background-color: rgba(221, 216, 196, 0.6);
 }
 
 #blogcarouselslider .carousel-indicators > li:hover {
@@ -64,12 +94,12 @@ a.card-categories:hover {
 
 /* Blogposts */
 .black-card-border {
-  background-color: #000;
-  border: 2px solid rgba(0,0,0,0.6);
+  background-color: #69140E;
+  border: 2px solid #69140E;
 }
 
 .card-img-overlay {
-  background:rgba(0,0,0,0.6);
+  background:rgba(105, 20, 14, 0.35);
   outline: 1px solid #fff;
   outline-offset: -15px;
 }
@@ -107,7 +137,7 @@ a.card-categories:hover {
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and  (max-width: 575px) {
   /* Categories */
   .card-categories-body > .card-title {
     font-size: 1.85rem;
@@ -115,6 +145,17 @@ a.card-categories:hover {
 
   .card-categories-body > .card-text {
     font-size: 1.15rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  /* Categories */
+  .card-categories-body > .card-title {
+    font-size: 0.8rem;
+  }
+
+  .card-categories-body > .card-text {
+    font-size: 0.55rem;
   }
 }
 
